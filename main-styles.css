@@ -1,0 +1,130 @@
+body,html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+  font-family: 'Cabin';
+  /*background-color: white;*/
+  /*scroll-behavior: smooth;*/
+  overflow-x: hidden;
+  /*scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;*/
+}
+
+/*Hide scrollbar*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    /*-ms-overflow-style: none;*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*GRID*/
+    
+.item1 { grid-area: header; }
+    .item2 { grid-area: left; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: right; }
+    .item5 { grid-area: footer; }
+
+    .grid-container {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-areas:
+
+
+        'left header header header header header header header header right'
+        'left main main main main main main main main right'
+        'left main main main main main main main main right'
+        'left main main main main main main main main right'
+        'left main main main main main main main main right'
+        'left main main main main main main main main right'
+        'left main main main main main main main main right'
+        'left main main main main main main main main right'
+        'left main main main main main main main main right'
+        'left main main main main main main main main right'
+        'left main main main main main main main main right'
+        'left main main main main main main main main right'
+        'left main main main main main main main main right'
+        'left footer footer footer footer footer footer footer footer right';
+    }
+
+    .grid-container > div {
+      /*border: 1px solid white;*/
+      text-align: left;
+      padding: 20px 0;
+    }
+
+
+.rectangle{
+  width: 100px;
+  height: 15px;
+  margin-top: 20px;
+  position: absolute;
+  background-color: #F2BD1D;
+}
+
+.rectangle2{
+  width: 100px;
+  height: 15px;
+  margin-top: 95px;
+  position: absolute;
+  background-color: #F2BD1D;
+}
+
+.rectangle3{
+  width: 580px;
+  height: 15px;
+  margin-top: 20px;
+  position: absolute;
+  left: -50%;
+  background-color: #F2BD1D;
+}
+
+
+/*wiggle line*/
+
+    .holder {
+        position: relative;
+        width: 150px;
+        height: 50px;
+        margin-top: 0;
+        margin-left: -10px;
+    }
+
+    .holder2 {
+        position: relative;
+        width: 300px;
+        height: 50px;
+        margin-top: 0;
+        margin-left: -250px;
+    }
+
+    .clip {
+        overflow: hidden;
+    }
+
+    .ellipse {
+        position: absolute;
+        background: radial-gradient(ellipse, transparent, transparent 7px, #0339A6 7px, #0339A6 10px, transparent 11px);
+        background-size: 36px 40px;
+        width: 400px;
+        height: 20px;
+    }
+
+    .ellipse2 {
+        top: 20px;
+        left: 18px;
+        background-position: 0px -20px;
+    }
+
+/**/
+
+

@@ -1,0 +1,127 @@
+/*SECTION HEIGHTS*/
+
+body,html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Cabin';
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  /*background-color: #181818;*/
+  scroll-behavior: smooth;
+  /*overflow-x: hidden;*/
+}
+
+section {
+    /*padding: 1rem;*/
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+
+
+.content-quiz{
+  width: 70%;
+  height: 550px;
+  /*border: 1px solid white;*/
+  position: absolute;
+  margin-top: 50px;
+}
+
+
+h1{
+  font-size: 15px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+h2{
+  position: absolute;
+  padding-top: 20px;
+  font-size: 46px;
+  font-weight: bold;
+  margin-top:0px;
+  width: 60%;
+  /*color: white;*/
+}
+
+
+.collapsible {
+  position: absolute;
+  background-color: none;
+  border-bottom: 3px solid #F2BD1D;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #F2BD1D;
+  cursor: pointer;
+  padding: 18px;
+  width: 30%;
+  /*border: none;*/
+  text-align: center;
+  outline: none;
+  margin-left: 70%;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: -70px;
+}
+
+/*.active, .collapsible:hover {
+  background-color: #ccc;
+}
+*/
+.content {
+  padding: 0 18px;
+  display: none;
+  width: 30%;
+  overflow: hidden;
+  color: black;
+  margin-left: 70%;
+  padding-left: 20px;
+  margin-top: 20px;
+  background-color: #F2BD1D;
+ /* max-height: 0;
+  transition: max-height 0.2s ease-out;*/
+}
+
+.response{
+  position: absolute;
+  width: 185px;
+  height: 86px;
+  border: 3px solid #0339A6;
+ /* border-right: none;
+  border-left: none;
+  border-top: 5px solid #0339A6;
+  border-bottom: 5px solid #0339A6;*/
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 42px;
+  color: #0339A6;
+  margin-top: 300px;
+}
+
+:active .response:hover {
+  background-color: #0339A6;
+  color: white;
+}
+
+
+.no{
+  margin-left: 35%;
+}
+
+.help{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 145px;
+  margin-left: 55%;
+  border-radius: 30px;
+  background-color: #F2BD1D;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  padding-top: 5px;
+}
